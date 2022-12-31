@@ -1,0 +1,79 @@
+@media screen and (max-width: 500px) {
+	.title h1 {
+		font-size: 50px;
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.title h1 {
+		text-align: left;
+	}
+}
+
+.wrapper-grid {
+	display: grid;
+	grid-template-columns: minmax(100px 1fr);
+	justify-content: center;
+	gap: 2rem;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.card-container {
+	background-color: #19191c;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 1.5rem;
+}
+
+.card-container p {
+	text-align: left;
+}
+
+.dots-wrapper {
+	display: flex;
+	padding: 10px;
+}
+
+#dot-1 {
+	background-color: #fc6058;
+}
+
+#dot-2 {
+	background-color: #fec02f;
+}
+
+#dot-3 {
+	background-color: #2aca3e;
+}
+
+.browser-dot {
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 5px;
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+}
+
+.title h2 {
+	font-size: 2.5rem;
+	text-align: left;
+	margin-left: 5%;
+}
+
+@media screen and (min-width: 500px) {
+	.wrapper-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.wrapper-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

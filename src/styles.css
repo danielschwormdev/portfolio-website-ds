@@ -1,1 +1,186 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html {
+	font-size: 72.5%;
+	box-sizing: border-box;
+	line-height: 1.15;
+	background-color: #111013;
+	color: #fff;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	max-width: 100%;
+	min-height: 100%;
+}
+
+@media only screen and (max-width: 864px) {
+	html {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+}
+
+body,
+body * {
+	font-family: "Nunito", sans-serif;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	overflow: visible;
+}
+
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+	width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4777e5;
+}
+
+/*
+Button Style
+ */
+
+.btn {
+	position: relative;
+	display: inline-block;
+	margin: 1m;
+	padding: 1em 2em;
+	border: 0;
+	border-radius: 30px;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+.btn:hover {
+	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+	transform: translateY(1px);
+	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn--action {
+	background-color: #4777e5;
+	color: white;
+}
+
+@media only screen and (max-width: 864px) {
+	h2 {
+		font-size: 2rem;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3rem;
+		width: 100%;
+	}
+
+	p {
+		font-size: 1.5rem;
+	}
+
+	.btn {
+		text-align: left;
+	}
+
+	.typing-container {
+		margin-top: 80px;
+	}
+}
+
+.typing-container h1 {
+	border-right: solid 3px #4777e5;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.typing-container h1 {
+	animation: animated-text 4s steps(29, end) 1s 1 normal both,
+		animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-text {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes animated-cursor {
+	from {
+		border-right-color: #4777e5;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+/*
+Layout
+ */
+
+.container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.content a {
+	text-decoration: none;
+}
+
+.content p {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 150%;
+	color: rgba(255, 255, 255, 0.67);
+	text-align: center;
+	margin: 2% 5% 2%;
+}
+
+.title h1 {
+	font-size: 5rem;
+	margin-top: 7%;
+	margin-bottom: 20px;
+	font-weight: 700;
+	line-height: 150%;
+	text-align: center;
+}

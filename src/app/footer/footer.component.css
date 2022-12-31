@@ -1,0 +1,43 @@
+@media screen and (max-width: 500px) {
+	.footer-title h1 {
+		font-size: 50px;
+		margin-bottom: 5%;
+	}
+}
+
+button {
+	margin: 6% 12% 6%;
+}
+
+.bi::before {
+	color: var(--icon-color);
+	font-size: 40px;
+}
+
+.icons a:hover {
+	color: #e4011b;
+	cursor: pointer;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	padding: 20px;
+}
+
+.icons > a {
+	flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 780px) {
+	.title h1 {
+		text-align: left;
+	}
+
+	.content p {
+		text-align: left;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,90 @@
+.container {
+	max-width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+:root {
+	--line-active: #4777e5;
+}
+
+p a:hover {
+	--spacing: 5px;
+	--stroke: var(var(--line-active));
+	--stroke-delay: 0.1s;
+	--offset: 180px;
+}
+
+span {
+	color: #4777e5;
+}
+
+h2 {
+	font-size: 3rem;
+	line-height: 150%;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	width: 60%;
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 150%;
+	font-weight: 700;
+	width: 80%;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 150%;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+p a {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	margin: 0 var(--spacing, 0px);
+	transition: margin 0.25s;
+}
+
+p a svg {
+	width: 76px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 7px) translateZ(0);
+	fill: none;
+	stroke: #4777e5;
+	stroke-linecap: round;
+	stroke-width: 2px;
+	stroke-dasharray: var(--offset, 69px) 279px;
+	stroke-dashoffset: 361px;
+	transition: stroke 0.25s ease var(--stroke-delay, 0s),
+		stroke-dasharray 0.35s;
+}
+
+.transition {
+	transition: all 0.1s ease;
+}
+
+@media only screen and (max-width: 780px) {
+	h2 {
+		font-size: 2rem;
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3rem;
+		width: 100%;
+	}
+}
